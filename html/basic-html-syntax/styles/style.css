@@ -1,0 +1,23 @@
+html {
+  background-color: grey;
+}
+
+img,
+input {
+  display: block;
+  margin: 20px;
+}
+
+div {
+  margin: 20px 0 0 0;
+}
+
+.items-list {
+  background-color: lightgrey;
+  height: 200px;
+}
+
+.item {
+  margin-bottom: 10px;
+  background-color: white;
+}
