@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Images</title>
+  </head>
+
+  <body>
+    <h1>Images in HTML</h1>
+
+    <section>
+      <h2>Playground</h2>
+      <img
+        src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+        alt="Alt Text"
+        width="200px"
+        height="171px"
+        title="An Image"
+      />
+    </section>
+
+    <section>
+      <h2>Practice of Using Captions</h2>
+
+      <figure>
+        <img
+          src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+          alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
+          width="200"
+          height="171"
+        />
+        <figcaption>
+          A T-Rex on display in the Manchester University Museum
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>CSS Background Images</h2>
+      <style>
+        p {
+          background-image: url("https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg");
+          height: 200px;
+        }
+      </style>
+
+      <p>Test</p>
+    </section>
+  </body>
+</html>
