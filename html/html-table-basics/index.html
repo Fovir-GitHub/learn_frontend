@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Table template</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css" />
+    <style>
+      tbody {
+        font-size: 95%;
+        font-style: italic;
+      }
+
+      tfoot {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Table template</h1>
+
+    <section>
+      <h2>Creating Your First Table</h2>
+      <table>
+        <tr>
+          <td>Hi, I'm your first cell.</td>
+          <td>I'm your second cell.</td>
+          <td>I'm your third cell.</td>
+          <td>I'm your fourth cell.</td>
+        </tr>
+
+        <tr>
+          <td>Second row, first cell.</td>
+          <td>Cell 2.</td>
+          <td>Cell 3.</td>
+          <td>Cell 4.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Add Headers with &lt;th&gt; Elements</h2>
+      <table>
+        <tr>
+          <td>&nbsp;</td>
+          <th>Knocky</th>
+          <th>Flor</th>
+          <th>Ella</th>
+          <th>Juan</th>
+        </tr>
+        <tr>
+          <th>Breed</th>
+          <td>Jack Russell</td>
+          <td>Poodle</td>
+          <td>Streetdog</td>
+          <td>Cocker Spaniel</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>16</td>
+          <td>9</td>
+          <td>10</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th>Owner</th>
+          <td>Mother-in-law</td>
+          <td>Me</td>
+          <td>Me</td>
+          <td>Sister-in-law</td>
+        </tr>
+        <tr>
+          <th>Eating Habits</th>
+          <td>Eats everyone's leftovers</td>
+          <td>Nibbles at food</td>
+          <td>Hearty eater</td>
+          <td>Will eat till he explodes</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Allowing Cells to Span Multiple Rows and Columns</h2>
+
+      <table>
+        <tr>
+          <th colspan="2">Animals</th>
+        </tr>
+        <tr>
+          <th colspan="2">Hippopotamus</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Horse</th>
+          <td>Mare</td>
+        </tr>
+        <tr>
+          <td>Stallion</td>
+        </tr>
+        <tr>
+          <th colspan="2">Crocodile</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Chicken</th>
+          <td>Hen</td>
+        </tr>
+        <tr>
+          <td>Rooster</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Table Caption</h2>
+
+      <table>
+        <colgroup>
+          <col span="2" />
+          <col style="background-color: #97db9a" />
+          <col style="width: 100px" />
+          <col style="background-color: #97db9a" />
+          <col
+            style="background-color: #dcc48e; border: 4px solid #c1437a"
+          />
+          <col span="2" style="width: 100px" />
+        </colgroup>
+        <tr>
+          <td>&nbsp;</td>
+          <th>Mon</th>
+          <th>Tues</th>
+          <th>Wed</th>
+          <th>Thurs</th>
+          <th>Fri</th>
+          <th>Sat</th>
+          <th>Sun</th>
+        </tr>
+        <tr>
+          <th>1st period</th>
+          <td>English</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>German</td>
+          <td>Dutch</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>2nd period</th>
+          <td>English</td>
+          <td>English</td>
+          <td>&nbsp;</td>
+          <td>German</td>
+          <td>Dutch</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>3rd period</th>
+          <td>&nbsp;</td>
+          <td>German</td>
+          <td>&nbsp;</td>
+          <td>German</td>
+          <td>Dutch</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>4th period</th>
+          <td>&nbsp;</td>
+          <td>English</td>
+          <td>&nbsp;</td>
+          <td>English</td>
+          <td>Dutch</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <caption>
+          Timetable
+        </caption>
+      </table>
+    </section>
+
+    <section>
+      <h2>Add Structures</h2>
+
+      <table>
+        <caption>
+          How I chose to spend my money
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Purchase</th>
+            <th scope="col">Location</th>
+            <th scope="col">Date</th>
+            <th scope="col">Evaluation</th>
+            <th scope="col">Cost (€)</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="4">SUM</td>
+            <td>118</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <th scope="row">Haircut</th>
+            <td>Hairdresser</td>
+            <td>12/09</td>
+            <td>Great idea</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <th scope="row">Lasagna</th>
+            <td>Restaurant</td>
+            <td>12/09</td>
+            <td>Regrets</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <th scope="row">Shoes</th>
+            <td>Shoeshop</td>
+            <td>13/09</td>
+            <td>Big regrets</td>
+            <td>65</td>
+          </tr>
+          <tr>
+            <th scope="row">Toothpaste</th>
+            <td>Supermarket</td>
+            <td>13/09</td>
+            <td>Good</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>The id and headers attributes</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th id="clothes" colspan="3">Clothes</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th></th>
+            <th id="trousers" headers="clothes">Trousers</th>
+            <th id="skirts" headers="clothes">Skirts</th>
+            <th id="dresses" headers="clothes">Dresses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th id="belgium" rowspan="2">Belgium</th>
+            <th id="antwerp" headers="belgium">Antwerp</th>
+            <td headers="belgium antwerp clothes trousers">56</td>
+            <td headers="belgium antwerp clothes skirts">22</td>
+            <td headers="belgium antwerp clothes dresses">43</td>
+          </tr>
+          <tr>
+            <th id="ghent" headers="belgium">Ghent</th>
+            <td headers="belgium ghent clothes trousers">41</td>
+            <td headers="belgium ghent clothes skirts">17</td>
+            <td headers="belgium ghent clothes dresses">35</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
