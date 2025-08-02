@@ -1,0 +1,56 @@
+h1 {
+  color: red;
+}
+
+h1 + p {
+  font-size: 200%;
+}
+
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+li em {
+  color: rebeccapurple;
+}
+
+li span {
+  color: red;
+}
+
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
+
+.outer {
+  border: 5px solid black;
+}
+
+.box {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  transform: rotate(0.8turn);
+}
+
+@media (width>=30em) {
+  body {
+    background-color: blue;
+  }
+}
