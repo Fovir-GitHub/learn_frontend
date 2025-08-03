@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  background-color: darkgrey;
+}
+
+/* li[class] {
+  font-size: 120%;
+}
+
+li[class="a"] {
+  background-color: yellow;
+}
+
+li[class~="a"] {
+  color: red;
+} */
+
+li[class^="a"] {
+  font-size: 120%;
+}
+
+li[class$="a"] {
+  background-color: yellow;
+}
+
+li[class*="a"] {
+  color: red;
+}
