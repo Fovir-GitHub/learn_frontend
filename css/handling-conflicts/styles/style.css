@@ -1,0 +1,55 @@
+body {
+  background-color: darkgray;
+}
+
+h1 {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+.main-heading {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+#main-header {
+  color: pink;
+}
+
+.main {
+  color: rebeccapurple;
+  border: 2px solid #ccc;
+  padding: 1em;
+}
+
+.special {
+  color: black;
+  font-weight: bold;
+}
+
+.my-class-1 a {
+  color: inherit;
+}
+
+.my-class-2 a {
+  color: initial;
+}
+
+.my-class-3 a {
+  color: unset;
+}
+
+blockquote {
+  background-color: orange;
+  border: 2px solid blue;
+}
+
+.fix-this {
+  all: unset;
+}
