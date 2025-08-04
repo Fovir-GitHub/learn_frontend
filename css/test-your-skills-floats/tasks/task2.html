@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 2</title>
+
+    <style>
+      body {
+        font: 1.2em / 1.5 sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .box {
+        padding: 0.5em;
+      }
+
+      .float {
+        margin: 15px;
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        background-color: rebeccapurple;
+        color: #fff;
+        padding: 1em;
+      }
+
+      .float {
+        float: left;
+      }
+
+      .below {
+        clear: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="float">Float</div>
+      <p>This sentence appears next to the float.</p>
+      <p class="below">Make this sentence appear below the float.</p>
+    </div>
+  </body>
+</html>
