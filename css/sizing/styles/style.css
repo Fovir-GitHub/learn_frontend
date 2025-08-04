@@ -1,0 +1,71 @@
+body {
+  font: 1.2em sans-serif;
+}
+
+img {
+  border: 5px solid darkblue;
+}
+
+/* .wrapper {
+  display: flex;
+}
+
+.wrapper > * {
+  margin: 20px;
+} */
+
+/* .box {
+  border: 5px solid darkblue;
+  height: 100px;
+  width: 200px;
+} */
+
+/* .box {
+  border: 5px solid darkblue;
+  width: 50%;
+} */
+
+/* .box {
+  border: 5px solid darkblue;
+  width: 200px;
+  margin: 10%;
+  padding: 10%;
+} */
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* .wrapper > * {
+  margin: 20px;
+} */
+
+/* .box {
+  border: 5px solid darkblue;
+  min-height: 100px;
+  width: 200px;
+} */
+
+/* .box {
+  width: 200px;
+}
+
+.mini-box {
+  width: 30px;
+}
+
+.width {
+  width: 100%;
+}
+
+.max {
+  max-width: 100%;
+} */
+
+.box {
+  border: 5px solid darkblue;
+  width: 20vw;
+  height: 20vh;
+  font-size: 10vh;
+}
