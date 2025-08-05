@@ -1,0 +1,34 @@
+/* @media screen and (width: 600px) {
+  body {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    color: blue;
+  }
+} */
+
+/* @media (orientation: landscape) {
+  body {
+    color: rebeccapurple;
+  }
+}
+
+@media screen and (hover: hover) {
+  body:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+@media (30em <= width <= 50em) {
+} */
+
+@media screen and (width >= 600px),
+  screen and (orientation: landscape) {
+  body {
+    color: blue;
+  }
+}
