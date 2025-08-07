@@ -1,0 +1,15 @@
+section {
+  background-color: red;
+  min-height: 100px;
+  min-width: 100px;
+  margin: 20px;
+}
+
+div {
+  margin: 20px;
+  background-color: darkgray;
+}
+
+.hidden {
+  opacity: 0;
+}
