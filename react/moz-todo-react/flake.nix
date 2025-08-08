@@ -21,6 +21,8 @@
         echo "Entering the development environment!"
         echo "Node: $(node -v), npm: $(npm -v)"
 
+        alias dev="npm run dev"
+
         trap 'echo "Leaving the development environment!"' EXIT
       '';
     };
