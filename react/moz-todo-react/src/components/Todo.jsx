@@ -44,7 +44,11 @@ function Todo(props) {
         />
       </div>
       <div className="btn-group">
-        <button type="button" className="btn todo-cancel">
+        <button
+          type="button"
+          className="btn todo-cancel"
+          onClick={() => setEditing(!isEditing)}
+        >
           Cancel
           <span className="visually-hidden">renaming {props.name}</span>
         </button>
