@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 function Todo(props) {
   const [isEditing, setEditing] = useState(false);
@@ -79,6 +79,14 @@ function Todo(props) {
       </div>
     </div>
   );
+
+  useEffect(() => {
+    if (isEditing) {
+      editFieldRef.current.focus();
+    } else {
+      editButtonRef.current.focus();
+    }
+  }, [isEditing]);
 
   return (
     <li className="todo">
