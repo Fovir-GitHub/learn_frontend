@@ -21,6 +21,8 @@ function App(props) {
     setTasks([...tasks, newTask]);
   }
 
+  const headingText = `${taskList.length} ${taskList.length === 1 ? "task" : "tasks"} remaining`;
+
   return (
     <div className="todoapp stack-large">
       <h1>TodoMatic</h1>
@@ -30,7 +32,7 @@ function App(props) {
         <FilterButton />
         <FilterButton />
       </div>
-      <h2 id="list-heading">3 tasks remaining</h2>
+      <h2 id="list-heading">{headingText}</h2>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
