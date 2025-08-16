@@ -60,7 +60,7 @@ function App(props) {
         <Todo />
         <Todo />
       </ul>
-    </Todo>
+    </div>
   );
 }
 
