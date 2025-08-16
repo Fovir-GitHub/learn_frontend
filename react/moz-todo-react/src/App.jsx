@@ -5,7 +5,7 @@ import { useState } from "react";
 import { nanoid } from "nanoid";
 
 const FILTER_MAP = {
-  ALL: () => true,
+  All: () => true,
   Active: (task) => !task.completed,
   Completed: (task) => task.completed,
 };
